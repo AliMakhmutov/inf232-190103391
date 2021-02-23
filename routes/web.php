@@ -19,8 +19,12 @@ Route::get('/', function () {
 
 Route::get('/student', function () {
     return view('student');
-});
+}); //Жаңа student деген view аштым
 
 Route::get('/test/{name}/{id}/{age?}', function($name, $id, $age=18) {
     return "Name: $name"."<br>". "ID: $id"."<br>". "Age: $age";
 });
+
+Route::get('/hello', function () {
+    return "Hello Wolrd";
+}); 
