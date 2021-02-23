@@ -23,7 +23,7 @@ Route::get('/student', function () {
 
 Route::get('/test/{name}/{id}/{age?}', function($name, $id, $age=18) {
     return "Name: $name"."<br>". "ID: $id"."<br>". "Age: $age";
-});
+}); //4 дәріс үйренгенге мысал
 
 Route::get('/hello', function () {
     return "Hello Wolrd";
